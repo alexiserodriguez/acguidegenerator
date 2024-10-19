@@ -1,0 +1,20 @@
+{
+  "short_name": "Label Generator",
+  "name": "Label Generator",
+  "icons": [
+    {
+      "src": "icon-dark.png",
+      "type": "image/png",
+      "sizes": "658x658"
+    },
+    {
+      "src": "icon-light.png",
+      "type": "image/png",
+      "sizes": "658x658"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

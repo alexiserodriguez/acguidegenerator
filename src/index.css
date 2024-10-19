@@ -1,0 +1,76 @@
+:root {
+  /* Other styles... */
+  font-family: Jost, Inter, system-ui, J, Helvetica, Arial, sans-serif;
+  /* Increased line-height to prevent overlapping */
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 80vh; /* Fills the entire viewport height */
+  width: 80vw; /* 8.5 inches converted to vw (assuming 100vw = screen width) */
+  margin: 0 auto; /* Centers content horizontally */
+  display: flex;
+  text-align: center; /* Centers all text by default */
+  justify-content: center;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 3.6em;
+  line-height: 1.2; /* Adjust as needed for spacing */
+  text-align: center;
+  font-weight: bolder;
+}
+.asset-number {
+  font-size: 4.2em;
+}
+h2 {
+  font-size: 2.8em;
+}
+
+.label {
+  text-align: center; /* Center text within .label */
+
+  /* Adjust width or use flexbox for internal content centering (if needed) */
+  /* width: 77vw;  */ /* Uncomment if needed */
+}
+.bold-txt {
+  font-size: 2em;
+  font-weight: bold;
+}
+.kit-info {
+  line-height: 0.05em;
+  justify-content: center;
+  text-align: center;
+}
+.job-info {
+  padding-left: 15%;
+  line-height: 0.5em;
+  font-size: larger;
+  justify-content: left; /* Intentional left alignment */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  /* Adjust for smaller screens (optional) */
+  body {
+    width: 77.2vh; /* Example adjustment for narrower screens */
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    width: 100vw;
+    margin: 0;
+  }
+  body {
+    justify-content: center;
+    height: 10.5in;
+    width: 8in;
+    margin: 0; /* Remove margins for better space utilization */
+  }
+}
