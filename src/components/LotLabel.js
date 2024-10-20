@@ -11,7 +11,7 @@ function LotLabel() {
     allParams[key] = value;
   }
   //const { lotId, sku, jobName, jobId, release, kit, id } = allParams;
-  const {guideNumber,client,ciudadColonia,programmedDispatch,includes,recibeDestino,direccionDestino,telefonoDestino,correoDestino} = allParams
+  const {guideNumber,client,tipoPaqueteria,ciudadColonia,programmedDispatch,includes,recibeDestino,direccionDestino,telefonoDestino,correoDestino} = allParams
 
 
   useEffect(() => {
@@ -27,6 +27,10 @@ function LotLabel() {
         </h2>
         <p>
           {client}
+        </p>
+        <h2>Tipo de Paquetería</h2>
+        <p>
+          {tipoPaqueteria}
         </p>
         <h2>
           A dónde va (ciudad y colonia)
@@ -46,7 +50,7 @@ function LotLabel() {
         <p>
           {includes}
         </p>
-        <p>------------------------------------------</p>
+        <p>-------------------------------------------------------------------------------------------------------------------------------</p>
         <h1>
           Dirección (cortar y pegar)
         </h1>

@@ -7,23 +7,24 @@
 }
 
 body {
-  height: 90vh; /* Fills the entire viewport height */
-  width: 90vw; /* 8.5 inches converted to vw (assuming 100vw = screen width) */
+  height: 100vh; /* Fills the entire viewport height */
+  width: 100vw; /* 8.5 inches converted to vw (assuming 100vw = screen width) */
   margin: 0 auto; /* Centers content horizontally */
   display: flex;
   text-align: start; /* Centers all text by default */
-  justify-content: center;
+  justify-content: start;
   max-width: 800px;
 }
 
 h1 {
   font-size: 1.8em;
   line-height: 0.6; /* Adjust as needed for spacing */
-  text-align: center;
+  text-align: start;
   font-weight: bolder;
 }
 .lot-info{
   padding-top:30px;
+  text-align:start;
 }
 .asset-number {
   font-size: 4.2em;
