@@ -7,26 +7,29 @@
 }
 
 body {
-  height: 80vh; /* Fills the entire viewport height */
-  width: 80vw; /* 8.5 inches converted to vw (assuming 100vw = screen width) */
+  height: 90vh; /* Fills the entire viewport height */
+  width: 90vw; /* 8.5 inches converted to vw (assuming 100vw = screen width) */
   margin: 0 auto; /* Centers content horizontally */
   display: flex;
-  text-align: center; /* Centers all text by default */
+  text-align: start; /* Centers all text by default */
   justify-content: center;
   max-width: 800px;
 }
 
 h1 {
-  font-size: 3.6em;
-  line-height: 1.2; /* Adjust as needed for spacing */
+  font-size: 1.6em;
+  line-height: 0.6; /* Adjust as needed for spacing */
   text-align: center;
   font-weight: bolder;
+}
+.lot-info{
+  padding-top:20px;
 }
 .asset-number {
   font-size: 4.2em;
 }
 h2 {
-  font-size: 2.8em;
+  font-size: 1.2em;
 }
 
 .label {
