@@ -18,7 +18,7 @@ function LotLabel() {
     window.print();
   }, []);
 
-  const guideImage="https://www.appsheet.com/template/gettablefileurl?appName=inventarionuevo-801982&tableName=Guias%20de%20envio%20PR&fileName="+"Guias%20de%20envio%20PR_Images%2F0263c070.File.170630.png"
+  const guideImage="https://www.appsheet.com/template/gettablefileurl?appName=inventarionuevo-801982&tableName=Guias%20de%20envio%20PR&fileName="+guideFile;
 
   return (
     <div className="label">
