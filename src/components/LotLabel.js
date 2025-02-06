@@ -18,7 +18,7 @@ function LotLabel() {
     window.print();
   }, []);
 
-  const guideImage="https://www.appsheet.com/template/gettablefileurl?appName=inventarionuevo-801982&tableName=Guias%20de%20envio%20PR&fileName="+guideFile;
+ // const guideImage="https://www.appsheet.com/template/gettablefileurl?appName=inventarionuevo-801982&tableName=Guias%20de%20envio%20PR&fileName="+guideFile;
 
   return (
     <div className="label">
@@ -52,8 +52,9 @@ function LotLabel() {
         <p>
           {includes}
         </p>
-        <p>-------------------------------------------------------------------------------------------------------------------------------</p>
-        <h1>
+       </div>
+        <div className="lot-info" style={{breakInside:"avoid"}}>
+        <h1 class="h1Direccion">
           Dirección (cortar y pegar)
         </h1>
         <h2>
@@ -80,9 +81,6 @@ function LotLabel() {
         <p>
           {correoDestino}
         </p>
-      </div>
-      <div className="lot-info">
-        <img src={guideImage} width="100%" height="100%"/>
       </div>
     </div>
   );
