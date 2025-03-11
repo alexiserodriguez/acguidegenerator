@@ -53,10 +53,7 @@ function LotLabel() {
           {includes}
         </p>
        </div>
-        <div className="lot-info" style={{breakInside:"avoid"}}>
-        <h1 class="h1Direccion">
-          Dirección (cortar y pegar)
-        </h1>
+        <div className="lot-info" style={{breakInside:"avoid",marginTop:"-30px"}}>
         <h2>
           Recibe:
         </h2>
