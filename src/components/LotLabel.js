@@ -3,6 +3,7 @@
 import { useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import QRCode from "react-qr-code";
+const dayjs = require('dayjs')
 
 function LotLabel() {
   let [searchParams] = useSearchParams();
@@ -12,7 +13,7 @@ function LotLabel() {
   }
   //const { lotId, sku, jobName, jobId, release, kit, id } = allParams;
   const {guideNumber,client,tipoPaqueteria,ciudadColonia,programmedDispatch,includes,recibeDestino,direccionDestino,telefonoDestino,correoDestino,guideFile} = allParams
-
+ 
 
   useEffect(() => {
     window.print();
@@ -44,7 +45,7 @@ function LotLabel() {
           Fecha de recolección
         </h2>
         <p>
-          {programmedDispatch}
+          {dayjs(programmedDispatch, "MM/DD/YYYY").format("DD/MM/YYYY")}
         </p>
         <h2>
           Qué incluye (productos y qué tamaño)
@@ -58,6 +59,7 @@ function LotLabel() {
           Recibe:
         </h2>
         <p>
+          
           {recibeDestino}
         </p>
         <h2>
