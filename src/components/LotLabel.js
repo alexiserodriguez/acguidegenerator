@@ -54,12 +54,19 @@ function LotLabel() {
           {includes}
         </p>
        </div>
-        <div className="lot-info" style={{breakInside:"avoid",marginTop:"-30px"}}>
+        <div className="lot-info" style={{breakInside:"avoid",marginTop:"0px"}}>
+        <div style={{display:"flex",flexDirection:"column"}}>
+        <span>&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;</span>
+        
+          </div>
+          
         <h2>
           Recibe:
         </h2>
         <p>
-          
           {recibeDestino}
         </p>
         <h2>
