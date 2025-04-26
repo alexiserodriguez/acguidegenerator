@@ -87,6 +87,10 @@ function LotLabel() {
         <p>
           {correoDestino}
         </p>
+
+        <h2>
+        ¡REVISA TU PAQUETE! 72h para reclamos de empaque.
+        </h2>
       </div>
     </div>
   );

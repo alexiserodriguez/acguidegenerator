@@ -18,7 +18,7 @@ body {
 
 h1 {
   font-size: 1.8em;
-  line-height: 0.6; /* Adjust as needed for spacing */
+  line-height: 0.75; /* Adjust as needed for spacing */
   text-align: start;
   font-weight: bolder;
 }
